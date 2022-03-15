@@ -77,3 +77,4 @@ gui/AboutAndFurtherInfo/ui_about_.ui
 *.xsd
 *.gpkg-shm
 *.gpkg-wal
+/vcs.xml

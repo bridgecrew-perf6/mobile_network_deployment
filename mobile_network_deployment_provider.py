@@ -31,7 +31,8 @@ __copyright__ = '(C) 2022 by CAMELLonCASE'
 __revision__ = '$Format:%H$'
 
 from qgis.core import QgsProcessingProvider
-from .mobile_network_deployment_algorithm import MobileNetworkDeploymentAlgorithm
+from core.algorithms import MobileNetworkDeploymentAlgorithm
+from core.algorithms import GenerateHexagonAreasAlgorithm
 
 
 class MobileNetworkDeploymentProvider(QgsProcessingProvider):
@@ -54,6 +55,7 @@ class MobileNetworkDeploymentProvider(QgsProcessingProvider):
         Loads all algorithms belonging to this provider.
         """
         self.addAlgorithm(MobileNetworkDeploymentAlgorithm())
+        self.addAlgorithm(GenerateHexagonAreasAlgorithm())
         # add additional algorithms here
         # self.addAlgorithm(MyOtherAlgorithm())
 
