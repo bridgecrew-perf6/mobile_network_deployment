@@ -108,3 +108,14 @@ class AlgorithmRunner:
         output = processing.run("native:buffer",
                                 parameters, context=context, feedback=feedback)
         return output['OUTPUT']
+
+    def run_layer_extent(self, input_layer, context, feedback=None, output_layer=None):
+        output_layer = 'memory:' if output_layer is None else output_layer
+        parameters = {
+            'INPUT': input_layer,
+            'ROUND_TO': 0,
+            'OUTPUT': output_layer
+        }
+        output = processing.run("native:polygonfromlayerextent", parameters, context=context, feedback=feedback)
+        return output['OUTPUT']
+        

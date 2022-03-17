@@ -1,7 +1,0 @@
-frequency,bandwidth,generation,transmission_type
-0.7,10,'5G','1x1'
-0.8,10,'4G','1x1'
-1.8,10,'4G','1x1'
-2.6,10,'4G','1x1'
-3.5,40,'5G','1x1'
-26,100,'5G','1x1'

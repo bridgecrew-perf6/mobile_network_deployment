@@ -31,8 +31,8 @@ __copyright__ = '(C) 2022 by CAMELLonCASE'
 __revision__ = '$Format:%H$'
 
 from qgis.core import QgsProcessingProvider
-from core.algorithms import MobileNetworkDeploymentAlgorithm
-from core.algorithms import GenerateHexagonAreasAlgorithm
+from .core.algorithms.mobile_network_deployment_algorithm import MobileNetworkDeploymentAlgorithm
+from .core.algorithms.generate_hexagon_areas_algorithm import GenerateHexagonAreasAlgorithm
 
 
 class MobileNetworkDeploymentProvider(QgsProcessingProvider):
